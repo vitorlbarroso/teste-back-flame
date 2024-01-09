@@ -6,6 +6,10 @@ Desafio back-end FlamePay.
   - Entity Framework
   - Banco de Dados MySql
 
+- O que esperamos do teste:
+  - Praticidade ao trabalhar com as tecnologias propostas.
+  - Utilização de boas práticas de desenvolvimento.
+
 - Proposta do desafio:
 Se imagine comprando em um site e você está na tela de checkout. Para realizar a compra, você precisa ter um produto selecionado, selecionar o método de pagamento, preencher as informações necessárias, realizar o pagamento e o seu pagamento será salvo em uma base de dados.
 O time da empresa buscará pelas compras que foram realizadas, irão verificar os dados de envio do produto, e assim que enviarem, irão marcar o produto como enviado.
@@ -25,6 +29,8 @@ O time da empresa buscará pelas compras que foram realizadas, irão verificar o
      - PaymentMethod - Enum (PIX, Cartão de Crédito, Boleto)
      - PaymentStatus - Enum (Paid, WaitPayment, Chargeback, Refund)
      - PurchaseCode - Unique
+     - BuyerFullName
+     - BuyerDocument
      - DeliveryAddressState
      - DeliveryAddressCity
      - DeliveryAddressComplement
