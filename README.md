@@ -4,7 +4,7 @@ Desafio back-end FlamePay.
   1. C#
   2. .NET 6
   3. Entity Framework
-  4. Banco de Dados MySql
+  - Banco de Dados MySql
 
 - Proposta do desafio:
 Se imagine comprando em um site e você está na tela de checkout. Para realizar a compra, você precisa ter um produto selecionado, selecionar o método de pagamento, preencher as informações necessárias, realizar o pagamento e o seu pagamento será salvo em uma base de dados.
