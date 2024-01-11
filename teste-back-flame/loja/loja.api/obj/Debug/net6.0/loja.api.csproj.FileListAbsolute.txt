@@ -39,9 +39,10 @@ D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\MySqlConnec
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\loja.data.dll
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\loja.domain.dll
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\loja.data.pdb
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\loja.domain.pdb
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\Humanizer.dll
-D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\MessagePack.dll
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\MessagePack.Annotations.dll
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
@@ -61,6 +62,7 @@ D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\Microsoft.D
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\Microsoft.Data.Sqlite.dll
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
@@ -279,5 +281,6 @@ D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\runtimes\wi
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\loja.domain.dll
-D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\loja.domain.pdb
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\loja.Ioc.dll
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.api\bin\Debug\net6.0\loja.Ioc.pdb

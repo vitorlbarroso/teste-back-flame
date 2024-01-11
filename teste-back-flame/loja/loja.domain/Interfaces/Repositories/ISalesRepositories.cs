@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace loja.domain.Interfaces
+namespace loja.domain.Interfaces.Repositories
 {
     public interface IsalesRepository
     {
@@ -15,6 +15,6 @@ namespace loja.domain.Interfaces
         IList<Products> GetAllByStatus(Status status);
         bool Save(Products produto);
         bool Update(Products produto);
-              
+
     }
 }

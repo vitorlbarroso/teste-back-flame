@@ -38,7 +38,7 @@ namespace loja.domain.Entities
         [StringLength(150)]
         public string DeliveryAddressZipCode { get; set; } = string.Empty;
 
-        public decimal AmountPaid { get => AmountPaid; set=> Produtos.Sum(x => x.Price); }
+        public decimal AmountPaid { get => AmountPaid; set=> Produtos.Sum(x => x.price); }
      
     }
 }

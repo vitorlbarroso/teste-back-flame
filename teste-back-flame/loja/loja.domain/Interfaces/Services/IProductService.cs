@@ -1,20 +1,18 @@
-﻿using loja.domain.Entities.Enums;
-using loja.domain.Entities;
+﻿using loja.domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace loja.domain.Interfaces
+namespace loja.domain.Interfaces.Services
 {
-    public interface IProductRepository 
+    public interface IProductService
     {
+        IEnumerable<Products> GetAll();
         Products GetByID(int produtoID);
-        IList<Products> GetAll();
-        IList<Products> GetAllByStatus(Status status);
+        IEnumerable<Products> GetAll(bool? status);
         bool Save(Products produto);
         bool Update(Products produto);
-
     }
 }

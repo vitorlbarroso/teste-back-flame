@@ -13,21 +13,21 @@ namespace loja.domain.Entities
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public int id { get; set; }
 
         [StringLength(250)]
-        public string Name { get; set; } = string.Empty;
+        public string name { get; set; } = string.Empty;
 
         [StringLength(400)]
-        public string? Description { get; set; }
+        public string? description { get; set; }
 
         [Column(TypeName = "decimal(18,2)")]
-        public decimal Price { get; set; }
-        public bool IsBlocked { get; set; } = false;
+        public decimal price { get; set; }
+        public bool isBlocked { get; set; } = false;
 
         [Timestamp]
-        public byte[] Timestamps { get; set; }
-      
+        public byte[]? timestamps { get; set; }       
+
 
     }
 }
