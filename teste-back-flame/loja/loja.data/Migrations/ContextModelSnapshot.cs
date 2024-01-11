@@ -19,7 +19,7 @@ namespace loja.data.Migrations
                 .HasAnnotation("ProductVersion", "6.0.26")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("loja.data.Models.Products", b =>
+            modelBuilder.Entity("loja.domain.Entities.Products", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -55,7 +55,7 @@ namespace loja.data.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("loja.data.Models.Sales", b =>
+            modelBuilder.Entity("loja.domain.Entities.Sales", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -112,14 +112,14 @@ namespace loja.data.Migrations
                     b.ToTable("Sales");
                 });
 
-            modelBuilder.Entity("loja.data.Models.Products", b =>
+            modelBuilder.Entity("loja.domain.Entities.Products", b =>
                 {
-                    b.HasOne("loja.data.Models.Sales", null)
+                    b.HasOne("loja.domain.Entities.Sales", null)
                         .WithMany("Produtos")
                         .HasForeignKey("SalesId");
                 });
 
-            modelBuilder.Entity("loja.data.Models.Sales", b =>
+            modelBuilder.Entity("loja.domain.Entities.Sales", b =>
                 {
                     b.Navigation("Produtos");
                 });

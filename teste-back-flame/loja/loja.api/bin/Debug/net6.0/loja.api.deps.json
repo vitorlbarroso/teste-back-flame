@@ -2731,16 +2731,14 @@
       "loja.data/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.26",
-          "Pomelo.EntityFrameworkCore.MySql": "6.0.2"
+          "Pomelo.EntityFrameworkCore.MySql": "6.0.2",
+          "loja.domain": "1.0.0"
         },
         "runtime": {
           "loja.data.dll": {}
         }
       },
       "loja.domain/1.0.0": {
-        "dependencies": {
-          "loja.data": "1.0.0"
-        },
         "runtime": {
           "loja.domain.dll": {}
         }

@@ -132,7 +132,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Projetos\\FlamePay\\teste-back-flame\\loja\\loja.domain\\loja.domain.csproj": {
+                "projectPath": "D:\\Projetos\\FlamePay\\teste-back-flame\\loja\\loja.domain\\loja.domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -214,11 +218,7 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {
-              "D:\\Projetos\\FlamePay\\teste-back-flame\\loja\\loja.data\\loja.data.csproj": {
-                "projectPath": "D:\\Projetos\\FlamePay\\teste-back-flame\\loja\\loja.data\\loja.data.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {

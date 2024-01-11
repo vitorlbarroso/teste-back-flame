@@ -1,5 +1,6 @@
-﻿using loja.data.Models;
-using loja.data.Models.Enums;
+﻿
+using loja.domain.Entities;
+using loja.domain.Entities.Enums;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;

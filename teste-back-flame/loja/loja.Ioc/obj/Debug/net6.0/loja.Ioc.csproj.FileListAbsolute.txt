@@ -1,0 +1,15 @@
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.Ioc\bin\Debug\net6.0\loja.Ioc.deps.json
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.Ioc\bin\Debug\net6.0\loja.Ioc.dll
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.Ioc\bin\Debug\net6.0\loja.Ioc.pdb
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.Ioc\obj\Debug\net6.0\loja.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.Ioc\obj\Debug\net6.0\loja.Ioc.AssemblyInfoInputs.cache
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.Ioc\obj\Debug\net6.0\loja.Ioc.AssemblyInfo.cs
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.Ioc\obj\Debug\net6.0\loja.Ioc.csproj.CoreCompileInputs.cache
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.Ioc\obj\Debug\net6.0\loja.Ioc.dll
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.Ioc\obj\Debug\net6.0\refint\loja.Ioc.dll
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.Ioc\obj\Debug\net6.0\loja.Ioc.pdb
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.Ioc\obj\Debug\net6.0\ref\loja.Ioc.dll
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.Ioc\bin\Debug\net6.0\loja.domain.dll
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.Ioc\bin\Debug\net6.0\loja.domain.pdb
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.Ioc\obj\Debug\net6.0\loja.Ioc.csproj.AssemblyReference.cache
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.Ioc\obj\Debug\net6.0\loja.Ioc.csproj.CopyComplete

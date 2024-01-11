@@ -355,6 +355,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "loja.domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/loja.domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/loja.domain.dll": {}
+        }
       }
     }
   },
@@ -813,6 +823,11 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "loja.domain/1.0.0": {
+      "type": "project",
+      "path": "../loja.domain/loja.domain.csproj",
+      "msbuildProject": "../loja.domain/loja.domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -820,7 +835,8 @@
       "Microsoft.EntityFrameworkCore >= 6.0.26",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.26",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.26",
-      "Pomelo.EntityFrameworkCore.MySql >= 6.0.2"
+      "Pomelo.EntityFrameworkCore.MySql >= 6.0.2",
+      "loja.domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -855,7 +871,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projetos\\FlamePay\\teste-back-flame\\loja\\loja.domain\\loja.domain.csproj": {
+              "projectPath": "D:\\Projetos\\FlamePay\\teste-back-flame\\loja\\loja.domain\\loja.domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

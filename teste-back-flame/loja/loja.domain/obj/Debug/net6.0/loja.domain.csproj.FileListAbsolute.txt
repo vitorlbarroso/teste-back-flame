@@ -9,7 +9,3 @@ D:\Projetos\FlamePay\teste-back-flame\loja\loja.domain\obj\Debug\net6.0\loja.dom
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.domain\obj\Debug\net6.0\refint\loja.domain.dll
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.domain\obj\Debug\net6.0\loja.domain.pdb
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.domain\obj\Debug\net6.0\ref\loja.domain.dll
-D:\Projetos\FlamePay\teste-back-flame\loja\loja.domain\obj\Debug\net6.0\loja.domain.csproj.AssemblyReference.cache
-D:\Projetos\FlamePay\teste-back-flame\loja\loja.domain\bin\Debug\net6.0\loja.data.dll
-D:\Projetos\FlamePay\teste-back-flame\loja\loja.domain\bin\Debug\net6.0\loja.data.pdb
-D:\Projetos\FlamePay\teste-back-flame\loja\loja.domain\obj\Debug\net6.0\loja.domain.csproj.CopyComplete

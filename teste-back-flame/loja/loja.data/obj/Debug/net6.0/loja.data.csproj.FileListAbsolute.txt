@@ -12,3 +12,6 @@ D:\Projetos\FlamePay\teste-back-flame\loja\loja.data\obj\Debug\net6.0\refint\loj
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.data\obj\Debug\net6.0\loja.data.pdb
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.data\obj\Debug\net6.0\loja.data.genruntimeconfig.cache
 D:\Projetos\FlamePay\teste-back-flame\loja\loja.data\obj\Debug\net6.0\ref\loja.data.dll
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.data\bin\Debug\net6.0\loja.domain.dll
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.data\bin\Debug\net6.0\loja.domain.pdb
+D:\Projetos\FlamePay\teste-back-flame\loja\loja.data\obj\Debug\net6.0\loja.data.csproj.CopyComplete

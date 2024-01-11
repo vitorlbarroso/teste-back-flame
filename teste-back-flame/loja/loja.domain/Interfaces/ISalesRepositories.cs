@@ -1,5 +1,5 @@
-﻿using loja.data.Models;
-using loja.data.Models.Enums;
+﻿using loja.domain.Entities;
+using loja.domain.Entities.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;

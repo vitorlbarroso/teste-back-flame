@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\loja.data\loja.data.csproj" />
-  </ItemGroup>
-
 </Project>

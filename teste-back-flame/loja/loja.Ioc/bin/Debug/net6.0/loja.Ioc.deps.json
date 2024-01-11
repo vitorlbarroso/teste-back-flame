@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "loja.Ioc/1.0.0": {
+        "dependencies": {
+          "loja.domain": "1.0.0"
+        },
+        "runtime": {
+          "loja.Ioc.dll": {}
+        }
+      },
+      "loja.domain/1.0.0": {
+        "runtime": {
+          "loja.domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "loja.Ioc/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "loja.domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

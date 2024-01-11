@@ -1,4 +1,5 @@
-﻿using loja.data.Models;
+﻿
+using loja.domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
