@@ -22,22 +22,20 @@ namespace loja.data.Repositories
         
         public IEnumerable<Sales> GetAll()
         {
-            return _context.Sales;
+            return _context.Sales.Include(p => p.Produto);
         }
         public IEnumerable<Sales> GetAll(Status status)
         {
-            var retorno= _context.Sales.Include(p => p.Produto).Where(p => p.Status.Equals(status));
          
-            return retorno;
+            return _context.Sales.Include(p => p.Produto).Where(p => p.Status.Equals(status));
+         
+           
         }
 
         public Sales GetByID(int salesID)
         {
-           var retorno=  _context.Sales.Where(p => p.Id.Equals(salesID)).FirstOrDefault();
-           if(retorno is not null)
-              _context.Entry(retorno).Reference(p => p.Produto).Load();
-            return retorno;
-
+           return  _context.Sales.Include(p => p.Produto).Where(p => p.Id.Equals(salesID)).FirstOrDefault();
+           
         }
 
         public bool Save(Sales sales)
