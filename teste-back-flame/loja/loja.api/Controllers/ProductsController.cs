@@ -63,7 +63,7 @@ namespace loja.api.Controllers
             var product = _productService.GetByID(productview.Id);
            
             if(product is null)
-                Results.Problem("Produto não existe.", "", StatusCodes.Status422UnprocessableEntity);
+                return Results.Problem("Produto não existe.", "", StatusCodes.Status422UnprocessableEntity);
             
             product.Name = productview.Name;
             product.Description = productview.Description;
