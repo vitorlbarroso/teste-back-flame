@@ -34,7 +34,11 @@ namespace loja.api.Controllers
         {
             return _salesService.GetByID(id);
         }
-
+        [HttpGet("status/{status}")]
+        public IEnumerable<Sales> Get(Status status)
+        {
+            return _salesService.GetAll(status);
+        }
 
         [HttpPost]
         public IResult Post([FromBody] Salespost salesview)
