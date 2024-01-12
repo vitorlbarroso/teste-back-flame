@@ -45,40 +45,37 @@ namespace loja.api.Controllers
         public IResult Post([FromBody] Productpost productview)
         {
             Products product=new Products();
-            product.name = productview.name;
-            product.description = productview.description;
-            product.price = productview.price;
+            product.Name = productview.name;
+            product.Description = productview.description;
+            product.Price = productview.price;
             DateTime t = DateTime.Now;
-            product.timestamps=BitConverter.GetBytes(t.Ticks);
+            product.Timestamps=BitConverter.GetBytes(t.Ticks);
            
             var retorno = _productService.Save(product);
 
-            return retorno ? Results.Ok() : Results.Problem("Erro ao inserir Produto");
+            return retorno ? Results.Ok() : Results.Problem("Erro ao inserir Produto","", StatusCodes.Status422UnprocessableEntity);
         }
 
        
-        [HttpPut("{id}")]
-        public IResult Put(int id, [FromBody] Productput productview)
+        [HttpPut]
+        public IResult Put([FromBody] Productput productview)
         {
-            var product = _productService.GetByID(id);
-            if (product != null && product.id == productview.id)
-            {
+            var product = _productService.GetByID(productview.Id);
+           
+            if(product is null)
+                Results.Problem("Produto não existe.", "", StatusCodes.Status422UnprocessableEntity);
+            
+            product.Name = productview.Name;
+            product.Description = productview.Description;
+            product.Price = productview.Price;
+            product.IsBlocked = productview.IsBlocked;
+            DateTime t = DateTime.Now;
+            product.Timestamps = BitConverter.GetBytes(t.Ticks);
 
-                product.name = productview.name;
-                product.description = productview.description;
-                product.price = productview.price;
-                product.isBlocked = productview.isBlocked;
-                DateTime t = DateTime.Now;
-                product.timestamps = BitConverter.GetBytes(t.Ticks);
-
-            }
-            else
-            {
-                return Results.Problem("Problema no id do produto.");
-            }
+                       
             var retorno = _productService.Update(product);
 
-            return retorno ? Results.Ok() : Results.Problem("Erro ao atualizar Produto");
+            return retorno ? Results.Ok() : Results.Problem("Erro ao atualizar Produto", "", StatusCodes.Status422UnprocessableEntity);
         }
 
        

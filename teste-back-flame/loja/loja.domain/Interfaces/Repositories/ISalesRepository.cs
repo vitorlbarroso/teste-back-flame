@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace loja.domain.Interfaces.Repositories
 {
-    public interface IsalesRepository
+    public interface ISalesRepository
     {
-        Products GetByID(int produtoID);
-        IList<Products> GetAll();
-        IList<Products> GetAllByStatus(Status status);
-        bool Save(Products produto);
-        bool Update(Products produto);
+        Sales GetByID(int salesID);
+        IEnumerable<Sales> GetAll();
+        IEnumerable<Sales> GetAll(Status status);
+        bool Save(Sales sales);
+        bool Update(Sales sales);
 
     }
 }

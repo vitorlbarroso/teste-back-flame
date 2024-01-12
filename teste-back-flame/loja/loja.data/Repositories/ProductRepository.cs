@@ -26,13 +26,13 @@ namespace loja.data.Repositories
 
         public IEnumerable<Products> GetAll(bool status)
         {
-            return _context.Products.Where(p=>p.isBlocked.Equals(status));
+            return _context.Products.Where(p=>p.IsBlocked.Equals(status));
         }
 
         
         public Products GetByID(int produtoID)
         {
-            return _context.Products.Where(p => p.id.Equals(produtoID)).FirstOrDefault();
+            return _context.Products.Where(p => p.Id.Equals(produtoID)).FirstOrDefault();
         }
 
         public bool Save(Products produto)

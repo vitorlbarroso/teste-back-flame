@@ -17,9 +17,11 @@ namespace loja.Ioc
         {
     
             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<ISalesService, SalesService>();
 
- 
+
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ISalesRepository, SalesRepository>();
         }
     }
 }

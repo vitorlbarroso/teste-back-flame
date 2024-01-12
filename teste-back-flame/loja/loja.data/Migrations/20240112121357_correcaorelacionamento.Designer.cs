@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using loja.data.Data;
 
@@ -10,9 +11,10 @@ using loja.data.Data;
 namespace loja.data.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20240112121357_correcaorelacionamento")]
+    partial class correcaorelacionamento
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,31 +23,31 @@ namespace loja.data.Migrations
 
             modelBuilder.Entity("loja.domain.Entities.Products", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Description")
+                    b.Property<string>("description")
                         .HasMaxLength(400)
                         .HasColumnType("varchar(400)");
 
-                    b.Property<bool>("IsBlocked")
+                    b.Property<bool>("isBlocked")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("name")
                         .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("varchar(250)");
 
-                    b.Property<decimal>("Price")
+                    b.Property<decimal>("price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<DateTime?>("Timestamps")
+                    b.Property<DateTime?>("timestamps")
                         .IsConcurrencyToken()
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("timestamp(6)");
 
-                    b.HasKey("Id");
+                    b.HasKey("id");
 
                     b.ToTable("Products");
                 });
@@ -57,7 +59,7 @@ namespace loja.data.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("AmountPaid")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(65,30)");
 
                     b.Property<string>("BuyerDocument")
                         .IsRequired()

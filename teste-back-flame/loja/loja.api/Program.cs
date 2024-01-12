@@ -2,6 +2,7 @@ using loja.data.Data;
 using loja.Ioc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +15,8 @@ builder.Services.AddSwaggerGen();
 var conectionStringMySql = "Server=localhost;Port=3306;initial catalog=lojaflame;uid=root;pwd=007987Pq;allow zero datetime=no";
 
 builder.Services.AddDbContext<Context>(x => x.UseMySql(conectionStringMySql, ServerVersion.Parse("8.2.0 - MySQL Community Server")));
-
+builder.Services.AddControllers()
+    .AddJsonOptions(options => { options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()); });
 
 DependencyContainer.RegisterServices(builder.Services);
 var app = builder.Build();

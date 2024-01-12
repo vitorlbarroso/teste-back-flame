@@ -17,7 +17,9 @@ namespace loja.domain.Entities
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public IList<Products> Produtos { get; set; }
+
+        public int ProdutoId { get; set; }
+        public Products Produto { get; set; }
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid PurchaseCode { get; set; }
@@ -38,7 +40,8 @@ namespace loja.domain.Entities
         [StringLength(150)]
         public string DeliveryAddressZipCode { get; set; } = string.Empty;
 
-        public decimal AmountPaid { get => AmountPaid; set=> Produtos.Sum(x => x.price); }
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal AmountPaid { get ; set; }
      
     }
 }

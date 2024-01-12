@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace loja.domain.Entities.Enums
 {
     public enum Status 
-    { 
-        Paid, 
-        WaitPayment, 
-        Chargeback, 
-        Refund 
+    {
+        WaitingToBeSent, 
+        Sent, 
+        Received, 
+        Returned
     }
 }
