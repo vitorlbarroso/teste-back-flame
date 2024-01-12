@@ -44,7 +44,9 @@ namespace loja.api.Controllers
         public IResult Post([FromBody] Salespost salesview)
         {
             var product = _productService.GetByID(salesview.ProdutoId);
-
+            
+            if(product is null)
+                return Results.Problem("Produto não existe.", "", StatusCodes.Status422UnprocessableEntity);
             if (!product.Price.Equals(salesview.AmountPaid))
                 return Results.Problem("Valor incorreto do pagamento.", "", StatusCodes.Status422UnprocessableEntity);
 

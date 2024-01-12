@@ -19,7 +19,7 @@ namespace loja.domain.Entities
         public int Id { get; set; }
 
         public int ProdutoId { get; set; }
-        public Products Produto { get; set; }
+        public virtual Products Produto { get; set; }
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid PurchaseCode { get; set; }

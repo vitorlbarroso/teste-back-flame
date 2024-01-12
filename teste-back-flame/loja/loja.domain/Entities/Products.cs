@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -26,8 +27,9 @@ namespace loja.domain.Entities
         public bool IsBlocked { get; set; } = false;
 
         [Timestamp]
-        public byte[]? Timestamps { get; set; }       
+        public byte[]? Timestamps { get; set; }
 
+      
 
     }
 }

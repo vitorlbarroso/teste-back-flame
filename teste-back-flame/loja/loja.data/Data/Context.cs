@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,6 +21,7 @@ namespace loja.data.Data
             optionsBuilder.UseMySql(conectionStringMySql, ServerVersion.Parse("8.2.0 - MySQL Community Server"));
             base.OnConfiguring(optionsBuilder);
         }
+      
         public DbSet<Products> Products { get; set; }
         public DbSet<Sales> Sales { get; set; }
 
