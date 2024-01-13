@@ -29,7 +29,7 @@ namespace loja.domain.Entities
         [Timestamp]
         public byte[]? Timestamps { get; set; }
 
-      
+      public int? teste {  get; set; }
 
     }
 }

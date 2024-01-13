@@ -11,8 +11,8 @@ using loja.data.Data;
 namespace loja.data.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20240112122216_correcaobd")]
-    partial class correcaobd
+    [Migration("20240113175716_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -47,6 +47,9 @@ namespace loja.data.Migrations
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("timestamp(6)");
 
+                    b.Property<int?>("teste")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Products");
@@ -59,7 +62,7 @@ namespace loja.data.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("AmountPaid")
-                        .HasColumnType("decimal(65,30)");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("BuyerDocument")
                         .IsRequired()

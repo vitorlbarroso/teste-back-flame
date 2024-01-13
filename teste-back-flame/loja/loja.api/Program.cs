@@ -12,7 +12,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-var conectionStringMySql = "Server=localhost;Port=3306;initial catalog=lojaflame;uid=root;pwd=007987Pq;allow zero datetime=no";
+var conectionStringMySql = "Server=localhost;Port=3306;initial catalog=testefla;uid=root;pwd=007987Pq;allow zero datetime=no";
 
 builder.Services.AddDbContext<Context>(x => x.UseMySql(conectionStringMySql, ServerVersion.Parse("8.2.0 - MySQL Community Server")));
 builder.Services.AddControllers()
